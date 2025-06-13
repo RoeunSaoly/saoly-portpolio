@@ -1,6 +1,6 @@
 import './Hero.css'
 import blue_bg from '../../assets/blue_bg.jpg'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link as AnchorLink } from 'react-scroll'
 
 const Hero = () => {
     return (
@@ -10,12 +10,20 @@ const Hero = () => {
             <p>I'm a student in year 2 of Information Technology Engineering at Royal University of Phnom Penh.</p>
             <div className="hero-action">
                 <div className="hero-connect">
-                    <AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink>
+                    <AnchorLink
+                        className='anchor-link'
+                        to='contact'
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                    >
+                        Connect with me
+                    </AnchorLink>
                 </div>
-            <a className="hero-resume"
-                href="/Roeun_Saoly_Cv.pdf"
-                rel="noopener noreferrer"
-                download>My resume </a>
+                <a className="hero-resume"
+                    href="/Roeun_Saoly_Cv.pdf"
+                    rel="noopener noreferrer"
+                    download>My resume </a>
             </div>
         </div>
     )

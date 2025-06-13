@@ -1,5 +1,6 @@
 {
   "name": "portfolio-website",
+  "homepage": "https://RoeunSaoly.github.io/saoly-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,15 +8,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8",
     "gh-pages": "^6.3.0",
     "react": "^19.1.0",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.2"
+    "react-router-dom": "^7.6.2",
+    "react-scroll": "^1.9.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
@@ -31,7 +34,7 @@
     "tailwindcss": "^4.1.8",
     "vite": "^6.3.5"
   },
-  "description": "This is my personal portfolio project built using **React JS** as the JavaScript library and **Vite** as the build tool.",
+  "description": "This is my personal portfolio project built using React JS as the JavaScript library and Vite as the build tool.",
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
