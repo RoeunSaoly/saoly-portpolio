@@ -38,5 +38,12 @@
   "main": "eslint.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoeunSaoly/saoly-portpolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RoeunSaoly/saoly-portpolio/issues"
+  }
 }
